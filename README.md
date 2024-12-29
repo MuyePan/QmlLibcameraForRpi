@@ -10,45 +10,59 @@ Click the following image to view this tutorial on Youtube.
 - Cross Compilation https://youtu.be/8kpHgNKPooc
 - Remote Debugging https://youtu.be/QWz-4R4kMIo
 
-  ## Using QML
-  main.qml
-  ```
-      LibCamera {
-        id: camera
-        view: cameraView
-        index: 0                            // camera index, default 0
-        width: 640                          // default 640
-        height: 480                         // default 480
-        format: LibCamera.Format_RGB888     // default Format_RGB565
-        fps: 10                             // default 15
-        enabled: true                       // default false
-        recordBitRate: 400000               // default 300000
-    }
+## Using QML
+main.qml
+```
+    LibCamera {
+      id: camera
+      view: cameraView
+      index: 0                            // camera index, default 0
+      width: 640                          // default 640
+      height: 480                         // default 480
+      format: LibCamera.Format_RGB888     // default Format_RGB565
+      fps: 10                             // default 15
+      enabled: true                       // default false
+      recordBitRate: 400000               // default 300000
+  }
 
-    LibCameraView {
-        id: cameraView
-        width: camera.width
-        height: camera.height
+  LibCameraView {
+      id: cameraView
+      width: camera.width
+      height: camera.height
 
-        anchors.top: parent.top
-        anchors.left: parent.left
-        anchors.topMargin: 10
-        anchors.leftMargin: 10
+      anchors.top: parent.top
+      anchors.left: parent.left
+      anchors.topMargin: 10
+      anchors.leftMargin: 10
 
-        refreshRateLimit: 10                           // default 15
+      refreshRateLimit: 10                           // default 15
 
-        Rectangle {
-            anchors.fill: parent
-            border.color: 'black'
-            visible: !camera.enabled
+      Rectangle {
+          anchors.fill: parent
+          border.color: 'black'
+          visible: !camera.enabled
 
-            Label {
-                text: "No Camera Stream"
-                color: "red"
+          Label {
+              text: "No Camera Stream"
+              color: "red"
 
-                anchors.centerIn: parent
-                font.pixelSize: 20
-            }
-        }
-    }
-  ```
+              anchors.centerIn: parent
+              font.pixelSize: 20
+          }
+      }
+  }
+```
+
+## Place to write processing code like working with openCV
+**qlibcamera/qlibcameraworker.cpp**
+```
+void LibCameraProcessWorker::process()
+{
+    // TODO: DO YOUR PROCESSINGS HERE
+    // const uchar * data = image_.bits()
+}
+```
+  
+
+  
+  
