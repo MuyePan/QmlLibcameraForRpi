@@ -5,7 +5,7 @@ It is highly recommended to watch video tutorial as there is additional content 
 
 Click the following image to view this tutorial on Youtube.
 
-[![Youtube video link](https://i.ytimg.com/vi/gTd6dm9ONSk/hqdefault.jpg)](//youtu.be/gTd6dm9ONSk "Youtube Video")
+[![Youtube video link](https://i.ytimg.com/vi/bBKXGIBTMmk/hqdefault.jpg)](//youtu.be/bBKXGIBTMmk "Youtube Video")
 
 - Cross Compilation https://youtu.be/8kpHgNKPooc
 - Remote Debugging https://youtu.be/QWz-4R4kMIo
