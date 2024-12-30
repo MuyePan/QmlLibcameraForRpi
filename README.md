@@ -1,6 +1,6 @@
 # Using Qt Quick/QML with libcamera on Raspberry Pi
-This is an demo to show how to use QML and Qt Quick with libcamera support snapshot and recording. 
-It has been tested on Rapsberry Pi 4B.
+This is an demo to show how to use QML and Qt Quick with libcamera including snapshot and recording. 
+It leverages multithreading and has been tested on Rapsberry Pi 4B.
 
 It is highly recommended to watch video tutorial as there is additional content in the video tutorial.
 
